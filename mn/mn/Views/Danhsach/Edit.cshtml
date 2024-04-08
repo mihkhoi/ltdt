@@ -1,0 +1,31 @@
+﻿@model Danhsach
+
+<form method="post">
+    <div class="container">
+        <div class="row pt-4 pb-3">
+            <div class="col-6">
+                <h2 class="text-primary">
+                    Chỉnh sửa trường
+                </h2>
+            </div>
+        </div>
+
+        <div class="mb-3 row p-1">
+            <label asp-for="University" class="p-0"></label>
+            <input asp-for="University" type="text" class="form-control" />
+            <span asp-validation-for="University" class="text-danger"></span>
+        </div>
+
+        <div class="row">
+            <div class="col-6 col-md-3">
+                <button type="submit" class="btn btn-primary form-control">Cập nhật</button>
+            </div>
+            <div class="col-6 col-md-3">
+                <a asp-controller="Category" asp-action="Index" class="btn btn-outline-secondary form-control">
+                    Trở về
+                </a>
+            </div>
+
+        </div>
+    </div>
+</form>
